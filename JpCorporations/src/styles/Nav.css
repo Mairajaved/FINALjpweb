@@ -1,0 +1,85 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 10px 20px;
+  background-color: white;
+  color: #000;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 80px; /* Added margin-bottom */
+}
+
+.navbar-brand {
+  padding-left: 100px; /* Adjusted padding for better alignment */
+}
+
+.navbar-brand img {
+  width: 120px; /* Increased logo size */
+  height: auto;
+}
+
+.navbar-toggler {
+  border-color: #444444;
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlBhciOpc9l0OxGpUoXBCoZ_l1a7kH2GV46Q&s");
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.nav-link {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: large;
+  font-style: bold;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: #000;
+  border-top: 2px solid #f3470a;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    justify-content: flex-start;
+  }
+
+  .navbar-brand {
+    padding-left: 10px;
+  }
+
+  .nav-link {
+    font-size: 20px; /* Slightly smaller font size for smaller screens */
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    padding-left: 5px;
+  }
+
+  .nav-link {
+    font-size: 18px; /* Adjust font size for mobile screens */
+    margin-left: 5px;
+  }
+}
+
+/* Add padding-top to the main content to avoid being hidden by the navbar */
+.main-content {
+  padding-top: 140px; /* Adjust this value to match the height of your navbar and margin-bottom */
+}
